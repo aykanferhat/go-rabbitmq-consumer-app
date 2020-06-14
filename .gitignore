@@ -17,3 +17,4 @@
 go-rabbitmq-consumer-app
 
 .idea
+go.sum
