@@ -1,0 +1,32 @@
+queue:
+  product:
+    productCreated:
+      channelCount: 1
+      prefetchCount: 10
+      exchange: "product.events"
+      exchangeType: "topic"
+      routingKey: "productCreated"
+      queue: "product.event.productCreated"
+    productUpdated:
+      channelCount: 2
+      prefetchCount: 20
+      exchange: "product.events"
+      exchangeType: "topic"
+      routingKey: "productUpdated"
+      queue: "product.event.productUpdated"
+    productStatusChanged:
+      channelCount: 3
+      prefetchCount: 30
+      exchange: "product.events"
+      exchangeType: "topic"
+      routingKey: "productStatusChanged"
+      queue: "product.event.productStatusChanged"
+  supplier:
+    supplierUpdated:
+      channelCount: 1
+      prefetchCount: 20
+      exchange: "supplier.event.updated"
+      exchangeType: "fanout"
+      routingKey: ""
+      queue: "supplier.event.updated"
+
